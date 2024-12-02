@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Nanum+Gothic&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    background: #152530;
+
+}
+*{
+    font-family: "Roboto Mono", serif;
+    
+}
+
+.collections{
+    width:700px;
+    display: flex;
+overflow-x: scroll;
+}
+
+.images {
+    display:flex;
+    grid-template-columns: auto auto auto;
+    grid: flex;
+    grid-gap:20px;
+    padding:10px;
+    width:95%;
+    transform: scale(1.0);
+    transition: 0.5s;
+    flex: none;
+}
+
+.collections::-webkit-scrollbar{
+display: flex;
+
+
+}
+
+    .collections img{
+        display: flex;
+        width: 92%;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.4s;
+        filter: grayscale(100%);
+    
+    }
+.collections .images img:hover{
+    filter: grayscale(0);
+    transform:scale(1.1);
+    cursor: pointer;
+
+}
+
+    .collection-wrap{
+        margin:  10px auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+    }
+
+    #backBtn, #nextBtn{
+        width: 50px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+.collections img div:hover{
+cursor: pointer;
+transform:scale(1.1);
+filter: grayscale(0);
+    }
+
+.portifolio{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    
+}
+
+.image-port{
+    width: 50%;
+    height: 40%;
+justify-content: center;
+align-items: center;
+margin: 10px 0 0 60%;
+}
+
+.img-p{
+width: 40%;
+height:25vh;
+border-radius: 50%;
+
+}
+
+.profile-card{
+    width: 80%;
+    justify-content: center;
+    text-align: left;
+    color: #3cceae;
+    font-weight: 300;
+
+
+
+}
+
+.Icons i{
+    justify-content: center;
+    align-items: center;
+    
+display: flex;
+padding: 0 10px 0;
+width: 35px;
+height: 8vh;
+font-size: 35px;
+border-radius: 50%;
+background: #0b060f;
+margin: 10px 0 0 20px;
+float: left;
+transform: scale(1.1);
+transition: 3s;
+transform: rotate(4.7);     transition: all 7s ease-out;
+
+}
+
+.Icons .img-g{
+    width: 200px;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.Icons i:hover{
+background: #4070f4;
+cursor: pointer;
+transform: transition 5s;
+}
+
+.Icons i{
+animation: fade 20s ease-in-out infinite ;
+transition: transform 0.3w ease-in-out;
+}
+
+@keyframes fade{
+    0%, 100% {
+    opacity: 1;
+    }
+
+50%{
+opacity: 0;
+}
+}
+
+
+body {
+    background: #152530;
+}
+
+* {
+    font-family: "Roboto Mono", serif;
+}
+
+.collections {
+    width: 700px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.images {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid: flex;
+    grid-gap: 20px;
+    padding: 10px;
+    width: 95%;
+    transform: scale(1.0);
+    transition: 0.5s;
+    flex: none;
+}
+
+.collections::-webkit-scrollbar {
+    display: flex;
+}
+
+.collections img {
+    display: flex;
+    width: 92%;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s;
+    filter: grayscale(100%);
+}
+
+.collections .images img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.collection-wrap {
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+#backBtn, #nextBtn {
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.collections img div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.portifolio {
+    width: 70%;
+    height: 50%;
+    display: flex;
+}
+
+.image-port {
+    width: 50%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 60%;
+}
+
+.img-p {
+    width: 40%;
+    height: 25vh;
+    border-radius: 50%;
+}
+
+.profile-card {
+    width: 80%;
+    justify-content: center;
+    text-align: left;
+    color: #3cceae;
+    font-weight: 300;
+}
+
+.Icons i {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 10px 0;
+    width: 35px;
+    height: 8vh;
+    font-size: 35px;
+    border-radius: 50%;
+    background: #0b060f;
+    margin: 10px 0 0 20px;
+    float: left;
+    transform: scale(1.1);
+    transition: 3s;
+    transform: rotate(4.7);
+    transition: all 7s ease-out;
+}
+
+.Icons .img-g {
+    width: 200px;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Icons i:hover {
+    background: #4070f4;
+    cursor: pointer;
+    transform: transition 5s;
+}
+
+.Icons i {
+    animation: fade 30s ease-in infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .collections {
+        width: 100%;
+    }
+    .portifolio {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .collections {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .images {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+    .portifolio {
+        width: 100%;
+    }
+    .image-port {
+        margin: 10px 0;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .img-p {
+        width: 60%;
+        height: 20vh;
+    }
+    .Icons i {
+        width: 30px;
+        height: 6vh;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .collections {
+        width: 700px;
+        flex-wrap: wrap;
+    
+    }
+    .images {
+        grid-template-columns: 1fr;
+        width: 210%;
+
+        
+        
+    }
+    .portifolio {
+        width: 90%;
+
+        
+    }
+    .profile-card {
+        width: 150%;
+        text-align: center;
+    margin: 0 0 0 -30px;
+        
+    }
+    .img-p {
+        width: 80%;
+        height: 25vh;
+    
+    }
+    .Icons i {
+        width: 15px;
+        height: 5vh;
+        font-size: 30px;
+        margin: 20px 0 0 45px;
+
+    
+    }
+}
